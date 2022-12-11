@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #e2a2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #e2a2e2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.25);
+}
+
+.container .left-side {
+    position: relative;
+    background: #580058;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profileText .imgBx {
+    object-position: center;
+    background-size: 20%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.profileText h2 {
+    color: palegoldenrod;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.profileText h2 span {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.contact-info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #f5e968;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    position: relative;
+}
+
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #e2a2e2;
+}
+
+.contact-info ul li .text {
+    font-size: 13.5px;
+}
+
+.contact-info ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-info.education li {
+    margin-bottom: 25px;
+}
+
+.contact-info.education h5 {
+    color: #e2a2e2;
+    font-weight: 500;
+}
+
+.contact-info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 800;
+}
+
+.contact-info.education h4 {
+    color: #fff;
+    font-weight: 200;
+}
+
+.container .right-side {
+    position: relative;
+    background: #f2e0f5;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 75px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #580058;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+p {
+    color: #be1fbe;
+    font-weight: 550;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.about .box .year-participate {
+    display: flex;
+    text-align: left;
+    object-position: left;
+    float: left;
+}
+
+.about .box .year-participate h2 {
+    font-weight: 750;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 130px;
+}
+
+.about .box .event {
+    margin-bottom: 15px;
+}
+
+.about .box .event h3 {
+    text-transform: uppercase;
+    font-weight: 790;
+    font-size: 20px;
+}
+
+.skills {
+    margin-bottom: 85px;
+}
+
+.skills .title3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #580058;
+    margin-bottom: 20px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848484;
+    font-weight: 800;
+}
+
+.skills .box .percent {
+    position: relative;
+    height: 10px;
+    background: rgba(132, 132, 132, 0.34); 
+    margin-left: 30px;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: darkmagenta;
+}
+
+.interest {
+    margin-bottom: 10px;
+}
+
+.interest .title4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #580058;
+    margin-bottom: 20px;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interest i {
+    margin-right: 6px;
+    color: #580058;
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 750;
+    margin: 10px 0;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 50px;
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
